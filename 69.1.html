@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .container {
+            position: relative;
+            
+        }
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+        .bottomleft {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+        .bottomright {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* transform: translate(-50%, -50%); */
+            font-size: 18px;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Text on top of image</h2>
+
+    <p>
+      Add some text to an image in the top left corner. top right ,bottam left
+      &bottam right
+    </p>
+
+    <div class="container">
+      <img
+        src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_640.jpg"
+        alt="Random image"
+      />
+      <div class="topleft">Top left</div>
+      <div class="topright">Top right</div>
+      <div class="bottomleft">Bottom left</div>
+      <div class="bottomright">Bottom right</div>
+      <div class="center">Center</div>
+    </div>
+  </body>
+</html>
