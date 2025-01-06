@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div{
+            border: 3px solid #4caf50;
+            padding: 5px;
+        }
+        .img1{
+            float: right;
+        }
+        .img2{
+            float: right;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>without Clearfix</h2>
+
+    <p>
+      this image is floated to the right . it also taller than the element
+      contantting it ,so it overflows outside of its container
+    </p>
+    <div>
+      <img src="download.jpegx" alt="" width="170" height="170" /> Lorem ipsum
+      dolor sit amet consectetur, adipisicing elit. Iure, provident.
+    </div>
+
+    <h2 style="clear: right">with new modern Clearfix</h2>
+    <div>
+      <img src="download.jpeg" alt="" width="170" height="170" />Lorem, ipsum
+      dolor sit amet consectetur adipisicing elit. Natus, neque.
+    </div>
+  </body>
+</html>
