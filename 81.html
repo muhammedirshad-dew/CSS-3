@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: beige;
+      }
+      .header,
+      .footer {
+        background-color: gray;
+        padding: 15px;
+        color: wheat;
+      }
+      .colum {
+        float: left;
+        padding: 15px;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .menu {
+        width: 25%;
+      }
+      .content {
+        width: 75%;
+      }
+      .menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #33b5e5;
+        color: white;
+      }
+      .menu li:hover {
+        background-color: #0099cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>chania</h1>
+    </div>
+    <div class="clearfix">
+      <div class="colum menu">
+        <ul>
+          <li>The Flight</li>
+          <li>the city</li>
+          <li>the Island</li>
+          <li>the food</li>
+        </ul>
+      </div>
+
+      <div class="colum content">
+        <h1>the City</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est,
+          deleniti? Quos praesentium laudantium animi magnam, soluta sunt
+          explicabo consequuntur suscipit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+          deleniti molestiae odit culpa nihil saepe?
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>footer text</p>
+    </div>
+  </body>
+</html>
