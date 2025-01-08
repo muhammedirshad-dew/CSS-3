@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+/*Header/blog title*/
+        .header{
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+
+        .leftcolumn{
+            float: left;
+            width: 75%;
+        }
+
+        .rightcolumn{
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .fakeimg{
+            background-color: rgb(131, 124, 124);
+            width: 100%;
+            padding: 20%;
+        }
+
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        @media screen and(max-width:800px){
+            .leftcolumn,.rightcolumn{
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and(max-width:400px){
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>My Website</h1>
+    </div>
+
+    <div class="topnav">
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#" style="float: right">Link</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, dec 7, 2017</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>Some text......</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            dolor enim saepe rerum ea sint distinctio rem eligendi dolores hic
+            veniam unde illo ipsam vero labore, eaque incidunt illum architecto
+            repudiandae consequatur quibusdam impedit voluptate porro nisi? Non
+            aliquam earum qui mollitia magni est corporis, vel eum
+            necessitatibus quae molestiae.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, sep 2, 2017</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>Some text......</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            dolor enim saepe rerum ea sint distinctio rem eligendi dolores hic
+            veniam unde illo ipsam vero labore, eaque incidunt illum architecto
+            repudiandae consequatur quibusdam impedit voluptate porro nisi? Non
+            aliquam earum qui mollitia magni est corporis, vel eum
+            necessitatibus quae molestiae.
+          </p>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+         <div class="card">
+                 <h2>About Me</h2>
+                <div class="fakeimg" style="height: 100px">Image</div>
+                <p>Some text about me in culpa........</p>
+            </div>
+
+         <div class="card">
+                <h3>Popular post</h3>
+             <div class="fakeimg"><p>Image</p></div>
+                <div class="fakeimg"><p>Image</p></div>
+             <div class="fakeimg"><p>Image</p></div>
+        </div>
+
+            <div class="card">
+                <h3>Follow me</h3>
+                <p>Some text...</p>
+            </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>
