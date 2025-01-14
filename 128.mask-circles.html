@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Mask Property</h1>
+
+    <h3>An SVG mask layer (formed as circles):</h3>
+
+    <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+        <mask id="svgmask3">
+            <circle fill="white" cx="75" cy="75" r="75"></circle>
+            <circle fill="white" cx="80" cy="260" r="75"></circle>
+            <circle fill="white" cx="270" cy="160" r="75"></circle>
+        </mask>
+        <image href="1.jpg" mask="url(#svgmask3)" width="600" height="400"></image>
+    </svg>  
+</body>
+</html>
